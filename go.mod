@@ -1,0 +1,71 @@
+module TelegramBot
+
+go 1.22.3
+
+require (
+	github.com/andybalholm/brotli v1.1.0 // indirect
+	github.com/bytedance/sonic v1.11.8 // indirect
+	github.com/bytedance/sonic/loader v0.1.1 // indirect
+	github.com/cloudwego/base64x v0.1.4 // indirect
+	github.com/cloudwego/iasm v0.2.0 // indirect
+	github.com/fasthttp/router v1.5.1 // indirect
+	github.com/fatih/color v1.17.0 // indirect
+	github.com/fsnotify/fsnotify v1.7.0 // indirect
+	github.com/go-telegram-bot-api/telegram-bot-api v4.6.4+incompatible // indirect
+	github.com/go-telegram-bot-api/telegram-bot-api/v5 v5.5.1 // indirect
+	github.com/go-telegram/bot v1.4.0 // indirect
+	github.com/goccy/go-yaml v1.11.3 // indirect
+	github.com/grbit/go-json v0.11.0 // indirect
+	github.com/hashicorp/hcl v1.0.0 // indirect
+	github.com/inconshreveable/mousetrap v1.1.0 // indirect
+	github.com/jedib0t/go-pretty/v6 v6.5.9 // indirect
+	github.com/klauspost/compress v1.17.8 // indirect
+	github.com/klauspost/cpuid/v2 v2.2.7 // indirect
+	github.com/lithammer/dedent v1.1.0 // indirect
+	github.com/magiconair/properties v1.8.7 // indirect
+	github.com/matoszz/blowfish v0.0.0-20230814173754-f596937fb9bc // indirect
+	github.com/mattn/go-colorable v0.1.13 // indirect
+	github.com/mattn/go-isatty v0.0.20 // indirect
+	github.com/mattn/go-runewidth v0.0.15 // indirect
+	github.com/mitchellh/go-homedir v1.1.0 // indirect
+	github.com/mitchellh/hashstructure v1.1.0 // indirect
+	github.com/mitchellh/mapstructure v1.5.0 // indirect
+	github.com/mymmrac/telego v0.30.2 // indirect
+	github.com/olekukonko/tablewriter v0.0.5 // indirect
+	github.com/pelletier/go-toml v1.9.5 // indirect
+	github.com/pelletier/go-toml/v2 v2.2.2 // indirect
+	github.com/pkg/errors v0.9.1 // indirect
+	github.com/rivo/uniseg v0.4.7 // indirect
+	github.com/sagikazarmark/locafero v0.5.0 // indirect
+	github.com/sagikazarmark/slog-shim v0.1.0 // indirect
+	github.com/savsgio/gotils v0.0.0-20240303185622-093b76447511 // indirect
+	github.com/sourcegraph/conc v0.3.0 // indirect
+	github.com/spf13/afero v1.11.0 // indirect
+	github.com/spf13/cast v1.6.0 // indirect
+	github.com/spf13/cobra v1.8.0 // indirect
+	github.com/spf13/jwalterweatherman v1.1.0 // indirect
+	github.com/spf13/pflag v1.0.5 // indirect
+	github.com/spf13/viper v1.19.0 // indirect
+	github.com/stmcginnis/gofish v0.18.0 // indirect
+	github.com/subosito/gotenv v1.6.0 // indirect
+	github.com/technoweenie/multipartstreamer v1.0.1 // indirect
+	github.com/tidwall/gjson v1.17.1 // indirect
+	github.com/tidwall/match v1.1.1 // indirect
+	github.com/tidwall/pretty v1.2.1 // indirect
+	github.com/tucnak/telebot v2.0.0+incompatible // indirect
+	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
+	github.com/valyala/bytebufferpool v1.0.0 // indirect
+	github.com/valyala/fasthttp v1.54.0 // indirect
+	github.com/valyala/fastjson v1.6.4 // indirect
+	go.uber.org/atomic v1.11.0 // indirect
+	go.uber.org/multierr v1.11.0 // indirect
+	golang.org/x/arch v0.8.0 // indirect
+	golang.org/x/exp v0.0.0-20240531132922-fd00a4e0eefc // indirect
+	golang.org/x/sys v0.20.0 // indirect
+	golang.org/x/text v0.15.0 // indirect
+	golang.org/x/xerrors v0.0.0-20231012003039-104605ab7028 // indirect
+	gopkg.in/ini.v1 v1.67.0 // indirect
+	gopkg.in/telebot.v3 v3.2.1 // indirect
+	gopkg.in/yaml.v2 v2.4.0 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
+)
