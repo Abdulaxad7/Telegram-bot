@@ -11,7 +11,7 @@ import (
 )
 
 func API(country string) (*JsonData.WeatherData, error) {
-	var apiKey = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Country?unitGroup=metric&key=RVGU33YYE4JR9EKFTRF8F8SUF&contentType=json"
+	var apiKey = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Country?unitGroup=metric&key=***********************************&contentType=json"
 
 	apiKey = strings.Replace(apiKey, "Country", country, 1)
 
