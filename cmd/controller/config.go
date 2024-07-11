@@ -9,7 +9,7 @@ import (
 
 func Config() (*telebot.Bot, error) {
 	// Replace with your bot token
-	botToken := "7215901507:AAGRiy381i_iMH-b9fhQmn1LH5KjQEVn41M"
+	botToken := "**************************************************"
 
 	pref := telebot.Settings{
 		Token:  botToken,
