@@ -24,13 +24,3 @@ func Config() (*telebot.Bot, error) {
 	return bot, nil
 
 }
-
-//
-//msg := tgbotapi.NewMessage(update.Message.Chat.ID, update.Message.Text)
-////button:= tgbotapi.KeyboardButton{Text: "this is button"}
-//tgbotapi.NewKeyboardButtonLocation("df")
-//buttons := tgbotapi.NewKeyboardButtonRow(tgbotapi.NewKeyboardButton("Button 1"), tgbotapi.NewKeyboardButton("Button 2"))
-////butto:=tgbotapi.NewInlineKeyboardRow( tgbotapi.InlineKeyboardButton{Text: "button"})
-//d := tgbotapi.NewReplyKeyboard(buttons)
-//msg.ReplyMarkup = d
-//tgbotapi.NewReplyKeyboard(buttons)
