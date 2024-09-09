@@ -2,6 +2,7 @@ package controller
 
 import (
 	"log"
+	"os"
 	"time"
 
 	"gopkg.in/telebot.v3"
@@ -9,7 +10,7 @@ import (
 
 func Config() (*telebot.Bot, error) {
 	// Replace with your bot token
-	botToken := "7215901507:AAGRiy381i_iMH-b9fhQmn1LH5KjQEVn41M"
+	botToken := os.Getenv("BOT_TOKEN")
 
 	pref := telebot.Settings{
 		Token:  botToken,

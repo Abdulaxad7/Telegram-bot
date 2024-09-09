@@ -2,10 +2,10 @@ package router
 
 import (
 	"gopkg.in/telebot.v3"
+	"os"
 )
 
 func (k KeyboardButton) settings(c telebot.Context) error {
-
 	return c.Send("Choose option ", &telebot.SendOptions{
 		ReplyMarkup: &telebot.ReplyMarkup{
 			ResizeKeyboard: true,
@@ -33,7 +33,7 @@ func (k KeyboardButton) SettingButtons(bot *telebot.Bot) [][]telebot.ReplyButton
 
 func (k KeyboardButton) thankHandler(c telebot.Context) error {
 
-	anim := &telebot.Photo{File: telebot.FromURL("https://inhalist.web.app/img/thanks.jpg")}
+	anim := &telebot.Photo{File: telebot.FromURL(os.Getenv("THANK_YOU_PHOTO"))}
 	c.Send(anim)
 	return c.Send("You are Welcome 👍🏻", &telebot.SendOptions{
 		ReplyMarkup: &telebot.ReplyMarkup{

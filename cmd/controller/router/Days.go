@@ -8,7 +8,7 @@ import (
 )
 
 func (k KeyboardButton) today(c telebot.Context) error {
-	get, err := getDataAsString(0)
+	get, err := toString(0)
 	if err != nil {
 		err = c.Send("Ooops🌪️, We are sorry, something went wrong on our server")
 		log.Fatal(err)
@@ -21,7 +21,7 @@ func (k KeyboardButton) today(c telebot.Context) error {
 	})
 }
 func (k KeyboardButton) tomorrow(c telebot.Context) error {
-	get, err := getDataAsString(1)
+	get, err := toString(1)
 	if err != nil {
 		err = c.Send("Ooops🌪️, We are sorry, something went wrong on our server")
 		log.Fatal(err)
@@ -34,7 +34,7 @@ func (k KeyboardButton) tomorrow(c telebot.Context) error {
 	})
 }
 func (k KeyboardButton) afterTomorrow(c telebot.Context) error {
-	get, err := getDataAsString(2)
+	get, err := toString(2)
 
 	if err != nil {
 		err = c.Send("Ooops🌪️, We are sorry, something went wrong on our server")
@@ -49,7 +49,7 @@ func (k KeyboardButton) afterTomorrow(c telebot.Context) error {
 	})
 }
 
-func getDataAsString(check int) (string, error) {
+func toString(check int) (string, error) {
 	var err error
 	var data *JsonData.Data
 	info, err := WeatherApi.Info()

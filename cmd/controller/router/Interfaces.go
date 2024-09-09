@@ -9,12 +9,13 @@ type InlineButtons interface {
 	CountrySelection(bot *telebot.Bot) [][]telebot.InlineButton
 }
 type KeyboardButton struct{}
+type Context telebot.Context
 
 type KeyboardButtons interface {
 	WeatherSel(bot *telebot.Bot) [][]telebot.ReplyButton
-	hourly(c telebot.Context) error
-	today(c telebot.Context) error
-	tomorrow(c telebot.Context) error
-	afterTomorrow(c telebot.Context) error
-	current(c telebot.Context) error
+	hourly(c Context) error
+	today(c Context) error
+	tomorrow(c Context) error
+	afterTomorrow(c Context) error
+	current(c Context) error
 }

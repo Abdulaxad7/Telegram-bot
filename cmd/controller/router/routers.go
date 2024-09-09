@@ -4,6 +4,7 @@ import (
 	"TelegramBot/cmd/controller"
 	"gopkg.in/telebot.v3"
 	"log"
+	"os"
 )
 
 var bot *telebot.Bot
@@ -17,7 +18,6 @@ func Start() {
 		log.Fatal(err)
 	}
 	bot.Handle("/start", LangHandler)
-
 	log.Println("Bot started")
 	bot.Start()
 
@@ -30,7 +30,7 @@ func LangHandler(c telebot.Context) error {
 
 	if Check {
 		photo := &telebot.Photo{
-			File: telebot.FromURL("https://www.hdwallpapers.in/download/green_forest_mountain_with_mist_during_morning_time_4k_hd_nature-3840x2160.jpg"),
+			File: telebot.FromURL(os.Getenv("BASE_URL")),
 		}
 		err = c.Send(photo)
 
@@ -40,6 +40,7 @@ func LangHandler(c telebot.Context) error {
 	if err != nil {
 		log.Fatal(err)
 	}
+	log.Println("/LangHandler")
 	return c.Send("Wahoooo. Hi "+username+""+"\nPlease select a language.", &telebot.SendOptions{
 		ReplyMarkup: &telebot.ReplyMarkup{
 			InlineKeyboard: in.LanguageSelection(bot, c),
@@ -55,6 +56,7 @@ func CountrySel(c telebot.Context) error {
 	if err != nil {
 		log.Fatal(err)
 	}
+	log.Println("/CountrySel")
 	return c.Send("Let's select your Country.", &telebot.SendOptions{
 		ReplyMarkup: &telebot.ReplyMarkup{
 			InlineKeyboard: in.CountrySelection(bot),
@@ -70,6 +72,7 @@ func BaseClimate(c telebot.Context) error {
 	if err != nil {
 		log.Fatal(err)
 	}
+	log.Println("/BaseClimate")
 	return c.Send("Choose a weather option", &telebot.SendOptions{
 		ReplyMarkup: &telebot.ReplyMarkup{
 			ResizeKeyboard: true,

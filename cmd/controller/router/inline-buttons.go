@@ -7,9 +7,8 @@ import (
 	"log"
 )
 
-func (InlineButton) LanguageSelection(bot *telebot.Bot, c telebot.Context) [][]telebot.InlineButton {
-
-	c.Delete()
+func (InlineButton) LanguageSelection(bot *telebot.Bot, c Context) [][]telebot.InlineButton {
+	_ = c.Delete()
 	lang1 := telebot.InlineButton{
 		Unique: "btn1",
 		Text:   "English 🇺🇸",
@@ -81,7 +80,7 @@ func inlineButtons(buttons []telebot.InlineButton) [][]telebot.InlineButton {
 	return regions
 }
 
-func ifAnother(c telebot.Context) {
+func ifAnother(c Context) {
 	var err error
 	err = c.Send("Goood, then let's type it")
 	bot.Handle(telebot.OnText, func(c telebot.Context) error {

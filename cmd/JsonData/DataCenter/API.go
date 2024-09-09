@@ -5,13 +5,13 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
-	"strings"
-
 	"net/http"
+	"os"
+	"strings"
 )
 
 func API(country string) (*JsonData.WeatherData, error) {
-	var apiKey = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Country?unitGroup=metric&key=RVGU33YYE4JR9EKFTRF8F8SUF&contentType=json"
+	var apiKey = os.Getenv("API_KEY")
 
 	apiKey = strings.Replace(apiKey, "Country", country, 1)
 
